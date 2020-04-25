@@ -1,7 +1,7 @@
 # HUFS20-1_DataStructue
 Labs and personal insights through the course
 
-Prof - ChanSu Shin
+Prof - ChanSu Shin <br>
 Labs and personal thoughts/trials about HUFS 2020-1 Data Structure class
 
 ## 01. Time Complexity
