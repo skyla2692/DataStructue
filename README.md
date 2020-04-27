@@ -20,10 +20,9 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
 ## 03. Linked List
 - Singly Linked List
 
-- Doubly Linked List:
-
-It covers the problem of deleting a node. Since singly Linked list needs to know the previous node of target to redirect the links of nodes. Doubly Linked List helps with deleting a node, or several nodes connected to each other, from a original list without searching for the previous node. But it doubles in the number of nodes to redirect. It may be complicated, but is worth doing because there are so much to earn by it. <br>
-In the course, I learned circular doubly linked list as a model form of doubly linked list.
+- Doubly Linked List
+  - It covers the problem of deleting a node. Since singly Linked list needs to know the previous node of target to redirect the links of nodes. Doubly Linked List helps with deleting a node, or several nodes connected to each other, from a original list without searching for the previous node. But it doubles in the number of nodes to redirect. It may be complicated, but is worth doing because there are so much to earn by it. <br>
+  - In the course, I learned circular doubly linked list as a model form of doubly linked list.
 
 ## 04. Hash Table
 
