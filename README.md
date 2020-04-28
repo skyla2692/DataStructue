@@ -16,7 +16,7 @@ Calculate Big-O time complexity. Comapre and find which one is faster and suitab
 It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
 
 ## 02. Stack and Queue
-
+- Parenthesis Check, Postfix Calculation is included in this chapter.
 ## 03. Linked List
 - Singly Linked List
   - It can be used instead of Array. Node is made of the data and link. Data contains key value, and link contains the adress of the next node. At the end of the list, there is a node called None, which means there are no more nodes connected to the node, and it is the last end of the node. The first node of the list is called head, and the node before the None, last node with value, is called tail.
