@@ -19,6 +19,7 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
 - Stack
   - Parenthesis Check, Postfix Calculation is included in this chapter.
 - Queue
+  - Palindrome Check is included in this chapter.
 
 ## 03. Linked List
 - Singly Linked List
