@@ -31,7 +31,7 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
   - DoublyLinkedList.py and Josephus.py is included in this part.
 
 ## 04. Hash Table
-
+- HT-linear_probing.py is included in this part.
 ## 05. Heap
 
 ## 06. Tree
