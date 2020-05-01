@@ -31,6 +31,11 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
   - DoublyLinkedList.py and Josephus.py is included in this part.
 
 ## 04. Hash Table
+- Hash tabel works like a dictionary. Map a key to a index with a hash function. If a slot is full with other item, collision occurs. To solve the collision and insert the value to a slot, we use Collision Resolution Method. <br>
+- There are 3 different points to keep in mind to make the Hash table to work efficiently. 
+  1. Table is controlled with a list.
+  2. Hash function - How to insert a key, determining f(key).
+  3. Collision resolution methtod - How to solve a collisio if occured.
 - HT-linear_probing.py is included in this part.
 ## 05. Heap
 
