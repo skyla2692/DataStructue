@@ -92,7 +92,6 @@ class SinglyLinkedList:
 	def size(self):
 		return self.size
 	
-# 아래 코드는 수정하지 마세요!
 L = SinglyLinkedList()
 while True:
 	cmd = input().split()
