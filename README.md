@@ -37,6 +37,8 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
   - Hash function - How to insert a key, determining f(key).
   - Collision resolution methtod - How to solve a collisio if occured.
 - HT-linear_probing.py is included in this part.
+  - HT-linear_probing.py : Defining a class of Hash Table that works in open addressing way. Also known as linear probing, they both work in same way, filling the underneath of slot that is already filled. 
+
 ## 05. Heap
 
 ## 06. Tree
