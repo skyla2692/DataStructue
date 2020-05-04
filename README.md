@@ -13,7 +13,7 @@ Calculate Big-O time complexity. Comapre and find which one is faster and suitab
 | O(n^2) | when all time compelxity is calculated and your biggest degree of polynomial is 2 |
 | O(n^3) | when all time compelxity is calculated and your biggest degree of polynomial is 3 |
 <br>
-It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
+It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 
 ## 02. Stack and Queue
 - Stack
@@ -39,6 +39,7 @@ It works the same with exponential wise and logarithms (O(logn), O(n^1/2)
 - HT_LinearProbing.py and HT_FindSum is included in this part.
   - HT_LinearProbing.py : Defining a class of Hash Table that works in open addressing way. Also known as linear probing, they both work in same way, filling the underneath of slot that is already filled. 
   - HT_FindSum.py : find a total number of pairs that sums up to k from a given list n. Used a class defined in HT_linear_probing.py, witht a few change applied.
+  
 ## 05. Heap
 
 ## 06. Tree
