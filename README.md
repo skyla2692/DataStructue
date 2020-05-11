@@ -24,8 +24,10 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 - Stack
 - Queue
 - LABS
-  - parenthesis_check.py
-  - postfix_calculation.py
+  - parenthesis_check.py : Check if a given string has matching parenthesis. Not only the numbers of each parenthesis, but the paring of it needs to match as well.
+  - infix_to_postfix.py : Make a infix expression to a postfix expression. This will be calculating +, -, /, \*, % operators, and operands will be separated from operators with space. This code uses stack class to operate functions.
+  - postfix_calculation.py : Calculate a postfix expression as a string, operands and operators are divided by a space. Only +, -, /, \*, % operators are used. Stack class will be used, and return value will be in a float number.
+  - palindrome_check.py : This code will be updated soon.
 
 ## 03. Linked List
 - Singly Linked List
@@ -36,16 +38,16 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - In the course, I learned circular doubly linked list as a model form of doubly linked list.
   
 - LABS
-  - singly_linked_list.py
-  - doubly_linked_list.py
-  - josephus.py : Make a code for josephus game.
+  - singly_linked_list.py : Write a Node class, and SinglyLinkedList class. SinglyLinkedList class supports pushFront, pushBack, popFront, popBack, search, remove and printList functions. It is an interactive program, which will get an input line from user (ex : pushFront 10), and will push 10 to a list defined in the code. All input should be in a form of "command (space) number" or "command".
+  - doubly_linked_list.py : It works in a same way with singly_linked_list.py but with few functional changes. This code provides splice, moveAfter, moveBefore, InsertAfter, InsertBefore, pushFront, pushBack, deleteNode, popFront, popBack, search, first, last, isEmpty and printList functions. Input command must be in a form of "command (space) number" or "command" like singly_linked_list.py.
+  - josephus.py : Make a code for josephus game using doubly_linked_list.
   
 ## 04. Hash Table
 - Hash tabel works like a dictionary. Map a key to a index with a hash function. If a slot is full with other item, collision occurs. To solve the collision and insert the value to a slot, we use Collision Resolution Method. 
 - There are 3 different points to keep in mind to make the Hash table to work efficiently. 
   - Table is controlled with a list.
   - Hash function - How to insert a key, determining f(key).
-  - Collision resolution methtod - How to solve a collisio if occured.
+  - Collision resolution methtod - How to solve a collision if occured.
   
 - LABS
   - linear_probing.py : Defining a class of Hash Table that works in open addressing way. Also known as linear probing, they both work in same way, filling the underneath of slot that is already filled. 
