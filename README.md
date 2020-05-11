@@ -38,9 +38,14 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - Collision resolution methtod - How to solve a collisio if occured.
 - HT_LinearProbing.py and HT_FindSum is included in this part.
   - HT_LinearProbing.py : Defining a class of Hash Table that works in open addressing way. Also known as linear probing, they both work in same way, filling the underneath of slot that is already filled. 
-  - HT_FindSum.py : find a total number of pairs that sums up to k from a given list n. Used a class defined in HT_linear_probing.py, witht a few change applied.
+  - HT_FindSum.py : find a total number of pairs that sums up to k from a given list n. Used a class defined in HT_linear_probing.py, with a few change applied.
   
 ## 05. Heap
+- Heap works in a way of tree structure. It needs to satisfy couple conditions to be a heap structure. 
+  - All of parent node contains a key value that is not smaller than it's child node. 
+  - The formation of tree needs to be in complete binary tree. 
+- LAB
+  - StreamOfMedian.py : Make a list of given integers and calculate a median of given variable k. Medians are stored as a list, and none of sorting algoritms, quick select, MOM structures can be used. Used two heaps to solve the problem. It adds all the medians stored in a list and returns the summation of it.
 
 ## 06. Tree
 
