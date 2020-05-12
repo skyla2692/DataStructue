@@ -49,16 +49,13 @@ def infix_to_postfix(token_list):
 	prec['/'] = 2
 	prec['^'] = 3
 	
-	
 	for token in token_list:
 		if token == '(':
 			opstack.push(token)
-			
 		elif token == ')':
 			while opstack.top() != '(':
 				outstack.append(opstack.pop())
 			opstack.pop()
-			
 		elif token in '+-/*^':
 			if opstack.isEmpty() == True :
 				opstack.push(token)
