@@ -48,59 +48,60 @@ def infix_to_postfix(token_list):
 	prec['*'] = 2
 	prec['/'] = 2
 	prec['^'] = 3
-
+	
+	
 	for token in token_list:
 		if token == '(':
 			opstack.push(token)
-        
+			
 		elif token == ')':
-            top = opstack.pop()
-			while top != '(':
-				outstack.append(top)
-                top = opstack.pop()
+			while opstack.top() != '(':
+				outstack.append(opstack.pop())
+			opstack.pop()
 			
 		elif token in '+-/*^':
-            while not opstack.isEmpty() and prec[opstack.top()] >= prec[token]:
-                outstack.append(opstack.pop())
-            opstack.push(token)
+			if opstack.isEmpty() == True :
+				opstack.push(token)
+			elif prec[token] > prec[opstack.top()]:
+				opstack.push(token)
+			else:
+				while prec[opstack.top()] >= prec[token]:
+					outstack.append(opstack.pop())
+					if opstack.isEmpty() == True :
+						break
+				opstack.push(token)
 		else:
 			outstack.append(token)
 			
-	while not opstack.isEmpty():
+	while opstack.isEmpty() == False:
 		outstack.append(opstack.pop())
-	return (outstack)
+	postfix_expr = " ".join(outstack)
+	return postfix_expr
+
 
 def compute_postfix(postfix):
-	S = Stack()
-    for op in token_list:
-        if op in '+-*/^':
-            try:
-                t = S.pop()
-                b = S.pop()
+	operand_s = Stack()
+	if len(postfix) <= 1 :
+		return postfix[0]
+	elif len(postfix) > 1:
+		for op in postfix:
+			if op in '+-*/^':
+				operand_1 = float(operand_s.pop())
+				operand_2 = float(operand_s.pop())
 				if op == '+':
-                    S.push(b+t)
+					calculated_operand = operand_1 + operand_2
 				elif op == '-':
-                    S.push(b-t)
-                elif op == '*':
-                    S.push(b*t)
+					calculated_operand = operand_2 - operand_1
+				elif op == '*':
+					calculated_operand = operand_1 * operand_2
 				elif op == '/':
-					S.push(b/t)
+					calculated_operand = operand_2 / operand_1
 				elif op == '^':
-					S.push(b**t)
-                else:
-                    print(op, "is not allowed")
-                    return None
-            except IndexError:
-                print("Invalid postfix expression")
-                return operand_s.pop()
-        else:
-            try:
-                operand = float(sym)
-                S.push(operand)
-            except ValueError:
-                print("Not float operand")
-                return None
-    return S.pop()
+					calculated_operand = operand_2 ** operand_1
+				operand_s.push(calculated_operand)
+			else:
+				operand_s.push(op)
+		return operand_s.pop()
     
 def get_value(E, i):
     j = i + 1
