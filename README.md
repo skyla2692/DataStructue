@@ -5,14 +5,15 @@ Prof - Chan Su Shin <br>
 Labs and personal thoughts/trials about HUFS 2020-1 Data Structure class
 
 ## 01. Time Complexity
-Calculate Big-O time complexity. Comapre and find which one is faster and suitable to use. <br>
+Calculate Big-O time complexity. Comapre and find which one is faster and suitable to use.
+
 |Time Complexity|Big-O|
 |:---:|:---:|
 | O(1) | all numeric time to go through the process |
 | O(n) | when all time compelxity is calculated and your biggest degree of polynomial is 1 |
 | O(n^2) | when all time compelxity is calculated and your biggest degree of polynomial is 2 |
 | O(n^3) | when all time compelxity is calculated and your biggest degree of polynomial is 3 |
-<br>
+
 It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 
 - LAB
