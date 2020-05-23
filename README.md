@@ -63,7 +63,10 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - stream_of_median.py : Make a list of given integers and calculate a median of given variable k. Medians are stored as a list, and none of sorting algoritms, quick select, MOM structures can be used. Used two heaps to solve the problem. It adds all the medians stored in a list and returns the summation of it.
 
 ## 06. Tree
-
+- Traversal
+- LAB : 
+  - play_with_BST : Make a code that works for all traversals (preorder, inorder, postorder traversals) with several additional functions.
+  
 ## 07. Balanced Binary Search Tree
 
 ## 08. Graph
