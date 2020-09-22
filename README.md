@@ -34,7 +34,7 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   
 - Doubly Linked List
   - It covers the problem of deleting a node. Since singly Linked list needs to know the previous node of target to redirect the links of nodes. Doubly Linked List helps with deleting a node, or several nodes connected to each other, from a original list without searching for the previous node. But it doubles in the number of nodes to redirect. It may be complicated, but is worth doing because there are so much to earn by it.
-  - In the course, I learned circular doubly linked list as a model form of doubly linked list.
+  - Circular doubly linked list is a model form of doubly linked list.
   
 - LAB :
   - singly_linked_list.py : Write a Node class, and SinglyLinkedList class. SinglyLinkedList class supports pushFront, pushBack, popFront, popBack, search, remove and printList functions. It is an interactive program, which will get an input line from user (ex : pushFront 10), and will push 10 to a list defined in the code. All input should be in a form of "command (space) number" or "command".
