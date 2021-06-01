@@ -21,7 +21,22 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 
 ## 02. Stack and Queue
 - Stack
+  - It is a linear data structure, which follows Last In First Out (LIFO) rule. 
+  - Data are saved in a list, and push(), pop(), top(), isEmpty(), size() functions are supported.
+  - There are three expressions of stack, Infix, Prefix, Postfix.
+
+| Infix Expression | Prefix Expression | Postfix Expression |
+|:---:|:---:|:---:|
+| A + B * C + D | + + A * B C D | A B C * + D + |
+| (A + B) * (C + D) | * + A B + C D | A B + C D + * |
+| A * B + C * D | + * A B * C D | A B * C D * + |
+| A + B + C + D | + + + A B C D | A B + C + D + |
+
 - Queue
+  - It is also a linear data structure, which folllows First In First Out (FIFO) rule. 
+  - Data are saved in a list, and enqueue(), dequeue(), isEmpty(), front(), len() functions are supported.
+  - Dequeue : A list that can be inserted and deleted from both sides. But you need to write two versions of push and pop functions.
+
 - LAB :
   - parenthesis_check.py : Check if a given string has matching parenthesis. Not only the numbers of each parenthesis, but the paring of it needs to match as well.
   - infix_to_postfix.py : Make a infix expression to a postfix expression. This will be calculating +, -, /, \*, % operators, and operands will be separated from operators with space. This code uses stack class to operate functions.
@@ -63,10 +78,12 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 ## 06. Tree
 - Traversal
   - When you want to visit all of the node in binary tree, you go in traversal way. There are three common ways : preorder, inorder, postorder.
-![binaryTree](https://user-images.githubusercontent.com/42270720/120263392-8ed44d00-c2d6-11eb-8311-42488e3f2c94.jpg)
   - Pre-order : Middle node is the first to visit, then left subtree nodes then finally right subtree nodes are to visit.
   - In-order :  Left subtree is the first to visit and after its traversal, middle node, then lastly right subtree is visited for traversal.
-  - Post-order : Left subtree is the first to visit, and right subtree nodes are visited, then the middle node is visited.
+  - Post-order : Left subtree is the first to visit, and right subtree nodes are visited, then the middle node is visited. <br>
+  - 
+ ![binaryTree](https://user-images.githubusercontent.com/42270720/120263392-8ed44d00-c2d6-11eb-8311-42488e3f2c94.jpg)
+ 
   - Looking at the binary tree from the picture above, the orders are as following.
     - Pre-order : 7-3-1-0-2-6-4-13-11-8-15-21
     - In-order : 0-1-2-3-4-6-7-8-11-13-15-21
@@ -76,5 +93,53 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - play_with_BST : Make a code that works for all traversals (preorder, inorder, postorder traversals) with several additional functions.
   
 ## 07. Balanced Binary Search Tree
+- If one subtree of the binary tree is bigger than the other subtree, balance both sides by using 'rotation'.
+- There are left rotation and right rotation, and they are symmetrical. 
+- After the rotation, the Binary Search Tree nodes' order must be the same.
+- AVL Tree, Red-Black tree, and Splay Tree are representing examples.
 
 ## 08. Graph
+- When two nodes have a relationship between each other nodes, the edge connects each other.
+- Linked list is one of the most simple form of the graph.
+- V stands for vertex or node, and E stands for edge. <br>
+
+![graph](https://user-images.githubusercontent.com/42270720/120265485-22a81800-c2db-11eb-9b54-37af5fc75532.jpg)
+
+- For example, if we define a graph above, G = (V, E). 
+- G => V = {1, 2, 3, 4, 5, 6}, E = { (1, 2), (3, 2), (1, 5), (2, 5), (4, 5), (6, 4), (3, 4)}
+
+- Graph Representation
+  - Adjacency matrix : If any edge exists in between node i and j, G\[i]\[j] = 1, else 0.
+  - Adjacency list : If any edge exists in between nodes, they are shown as linked list. 
+
+| Basic Operations | Adjacency matrix | Big-O | Adjacency list | Big-O |
+|:---:|:---:|:---:|:---:|:---:|
+| Is (u, v) edge? | G\[u]\[v] == 1 | O(1) | G\[u].search(v) != None | O(V)|
+| For all adjacent edge of u, (u, v) | G\[u]\[v] for v in range(n) | O(V) | for edge in G\[u] | O(deg(u))/O(out-deg(u)) |
+| Insert new edge (u, v) | G\[u]\[v] <- 1 | O(1) | G\[u].pushFront(v) | O(1) |
+| Delete edge (u, v) | G\[u]\[v] <- 0 | O(1) | x <- G\[u].search(v), G\[u].remove(x) | O(deg(u))/O(out-deg(u)) |
+| Memory for G || O(V^2) || O(E)|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
