@@ -81,7 +81,7 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - Pre-order : Middle node is the first to visit, then left subtree nodes then finally right subtree nodes are to visit.
   - In-order :  Left subtree is the first to visit and after its traversal, middle node, then lastly right subtree is visited for traversal.
   - Post-order : Left subtree is the first to visit, and right subtree nodes are visited, then the middle node is visited. <br>
-  - 
+  
  ![binaryTree](https://user-images.githubusercontent.com/42270720/120263392-8ed44d00-c2d6-11eb-8311-42488e3f2c94.jpg)
  
   - Looking at the binary tree from the picture above, the orders are as following.
@@ -119,27 +119,4 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 | Insert new edge (u, v) | G\[u]\[v] <- 1 | O(1) | G\[u].pushFront(v) | O(1) |
 | Delete edge (u, v) | G\[u]\[v] <- 0 | O(1) | x <- G\[u].search(v), G\[u].remove(x) | O(deg(u))/O(out-deg(u)) |
 | Memory for G || O(V^2) || O(E)|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
