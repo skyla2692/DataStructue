@@ -42,7 +42,7 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
   - josephus.py : Make a code for josephus game using doubly_linked_list.
   
 ## 04. Hash Table
-- Hash tabel works like a dictionary. Map a key to a index with a hash function. If a slot is full with other item, collision occurs. To solve the collision and insert the value to a slot, we use Collision Resolution Method. 
+- Hash table works like a dictionary. Map a key to a index with a hash function. If a slot is full with other item, collision occurs. To solve the collision and insert the value to a slot, we use Collision Resolution Method. 
 - There are 3 different points to keep in mind to make the Hash table to work efficiently. 
   - Table is controlled with a list.
   - Hash function - How to insert a key, determining f(key).
@@ -62,6 +62,16 @@ It works the same with exponentials and logarithms wise. (O(logn), O(n^1/2)
 
 ## 06. Tree
 - Traversal
+  - When you want to visit all of the node in binary tree, you go in traversal way. There are three common ways : preorder, inorder, postorder.
+![binaryTree](https://user-images.githubusercontent.com/42270720/120263392-8ed44d00-c2d6-11eb-8311-42488e3f2c94.jpg)
+  - Pre-order : Middle node is the first to visit, then left subtree nodes then finally right subtree nodes are to visit.
+  - In-order :  Left subtree is the first to visit and after its traversal, middle node, then lastly right subtree is visited for traversal.
+  - Post-order : Left subtree is the first to visit, and right subtree nodes are visited, then the middle node is visited.
+  - Looking at the binary tree from the picture above, the orders are as following.
+    - Pre-order : 7-3-1-0-2-6-4-13-11-8-15-21
+    - In-order : 0-1-2-3-4-6-7-8-11-13-15-21
+    - Post-order : 0-2-1-4-6-3-8-11-21-15-13-7
+  
 - LAB : 
   - play_with_BST : Make a code that works for all traversals (preorder, inorder, postorder traversals) with several additional functions.
   
